@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile-page</title>
+    <!-- custom-css-liFnk -->
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="shortcut icon" href="../imgs/logo.png">
+
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- firebase link -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+    <script src="../js/firebaselink.js"></script>
+
+</head>
+
+<body>
+    <!-- <input type="file" name="" id="" onchange="profile(event)"> -->
+    <header>
+        <div class="navbar-logo">
+            <img src="../imgs/greatlearning-brand.svg" alt="">
+        </div>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="fas fa-bars"></label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./Dashboard.html">Dashboard</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- -------------navbar-end-------------- -->
+
+    <!-- profile-section-start -->
+
+    <section id="profile-section">
+        <div class="profile-container">
+            <div class="picture-container">
+                <div class="picture">
+                    <img  class="picture-src" id="wizardPicturePreview" title="">
+                    <input type="file" onchange="profile(event)" id="" class="">
+                </div>
+
+            </div>
+            <label for="#" id="fname">First Name:</label>
+            <input type="text" placeholder="First Name" id="firstName">
+            <label for="#" id="fname">Last Name:</label>
+            <input type="text" placeholder="Last Name" id="lastName">
+            <label for="#" id="fname">Mobile Number:</label>
+            <input type="text" placeholder="Mobile Number" id="mobileNumber">
+            <label for="#" id="fname">Country:</label>
+            <input type="text" placeholder="Country" id="country">
+
+            <button id="updateButton" onclick="updateProfile()">Update Profile</button>
+        </div>
+    </section>
+
+
+    <script src="../js/profile.js"></script>
+</body>
+
+</html>

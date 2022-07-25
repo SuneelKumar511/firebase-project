@@ -1,0 +1,202 @@
+@font-face {
+    font-family: poppins;
+    src: url(PoppinsRegular-B2Bw.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(187, 187, 245);
+}
+header{
+    position: relative;
+    top: 0px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    padding: 10px 0px;
+    z-index: 1;
+}
+.navbar-logo{
+    width: 200px;
+    font-size: 2rem;
+    color: #3a3d3aaa;
+    cursor: pointer;
+}
+.navbar-logo img{
+    width: 130px;
+}
+
+
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: #212529;
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: poppins, sans-serif;
+}
+header .navbar ul li a:hover{
+    color:#05ae0e;
+}
+
+
+#menu-bar{
+    display: none;
+}
+header label {
+    font-size: 3rem;
+    color: purple;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+/*------------ navbar-end-------- */
+
+#profile-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container{
+    margin-top: 50px;
+    width: 400px;
+    box-shadow: 0 0px 40px 20px rgba(0,0,0,0.1);
+    /* background-image:linear-gradient(rgba(0, 0, 100,0.8), rgba(0,0,100,0.8)); */
+    border-radius: 5px;
+    padding: 10px;
+}
+input{
+ width: 95%;
+ padding: 15px;
+ border-radius: 30px;
+ border: 1px solid #eee;
+ margin: 7px 0px 20px 10px;
+ background-color: transparent;
+ outline: none;
+}
+#fname{
+    margin-left: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: poppins, sans-serif;
+}
+#updateButton{
+    width: 95%;
+    margin: 10px 0px 20px 10px;
+    background: transparent;
+    font-size: 20px;
+    padding: 10px 15px;
+    color: rgb(13, 13, 13);
+    cursor: pointer;
+    border-radius: 30px;
+    border: 1px solid #eeee;
+}
+#updateButton:hover{
+    background:#333;
+    color:#fff;
+}
+.picture-container{
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.picture{
+    width: 140px;
+    height: 140px;
+    background-color: #999999;
+    color: #FFFFFF;
+    border-radius: 50%;
+    margin: 0px auto;
+    overflow: hidden;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+h6{
+    color: #212529;
+    font-family: poppins, sans-serif;
+    font-size: 1rem;
+}
+
+.picture input[type="file"] {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0 !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.picture-src{
+    width: 100%; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media-query */
+
+@media(max-width:1230px){
+    header{
+        padding: 20px;
+    }
+    header label{
+        opacity: 1;
+        visibility: visible;
+        margin-right: 10px;
+    }
+    .navbar-logo{
+        margin-left: 10px;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #ffff;
+        border-top: 1rem solid rgba(0,0,0,0.1);
+        box-shadow: 0.5rem 1rem rgba(0,0,0,0.1);
+        opacity: 0;
+        padding: 1rem 2rem;
+        width: 100%;
+        z-index: 1;
+    }
+    header .navbar ul li{
+        width: 100%;
+    }
+    #menu-bar:checked ~ .navbar{
+        opacity: 1;
+    }
+}

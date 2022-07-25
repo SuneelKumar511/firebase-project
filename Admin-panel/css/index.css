@@ -1,0 +1,76 @@
+@font-face {
+    font-family: poppins;
+    src: url(PoppinsRegular-B2Bw.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.signIn-section{
+    width: 400px;
+    height: 500px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.signIn-section .heading{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(137, 43, 226, 0.879);
+    border-radius: 5px 5px 0px 0px;
+}
+.signIn-section h1{
+    text-transform: uppercase;
+    color: #fff;
+    font-family: poppins, sans-serif;
+    font-size: 2.5rem;
+}
+.signIn-section input{
+    width: 90%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(120, 115, 115);
+    margin-top: 40px;
+    background-color: transparent;
+}
+.signIn-section input::placeholder{
+    color: black;
+    font-size: 1rem;
+    font-family: poppins, sans-serif;
+    text-transform: capitalize;
+}
+.signIn-section button{
+    width: 90%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(89, 89, 202);
+    color: #fff;
+    margin-top: 40px;
+    border: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+button:hover{
+    background-color: rgb(27, 27, 26);
+    color: #ffff;
+}

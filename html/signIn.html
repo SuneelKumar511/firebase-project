@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>signIn</title>
+  <link rel="stylesheet" href="../css/signIn.css">
+  <link rel="shortcut icon" href="../imgs/logo.png">
+
+      <!-- font Awesome cdn link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+
+  <script src="../js/firebaselink.js"></script>
+
+</head>
+
+<body>
+  <div class="container-login">
+    <div class="box">
+      <div class="inner-box" id="card">
+        <div class="card-front">
+          <h2>LOGIN</h2>
+          <input type="email" id="loginEmail" placeholder="Your Email Id" class="input-box">
+          <input type="password" id="loginPass" placeholder="Password" class="input-box">
+          <p id="loginmessage"></p>
+          <button type="submit" class="submit-btn" onclick="login()">Login</button>
+            <div class="socailicon">
+              <i class="fa-brands fa-google" onclick="google()"></i>
+            <i class="fa-brands fa-facebook"></i>
+            </div>
+
+
+          <div id="button"><a href="./signup.html">I'm New Here</a></div>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" id="forgetpassword">Forget Password</a>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Forget Password</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="forgetemail" placeholder="name@example.com">
+                  </div>
+                  <p id="forgetmessage"></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" onclick="forgetpassword()">Send Email</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/signIn.js"></script>
+</body>
+
+</html>

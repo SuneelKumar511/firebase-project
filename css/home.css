@@ -1,0 +1,475 @@
+@font-face {
+    font-family: poppins;
+    src: url(PoppinsRegular-B2Bw.otf);
+}
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+  }
+  
+  
+  
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+  
+  section {
+    padding: 5rem 10%;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    background: #f0fdfa;
+    color: #0eb582;
+    cursor: pointer;
+    text-transform: capitalize;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background: #0eb582;
+    color: #fff;
+  }
+  
+  .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    padding: 3rem 10%;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .header .logo {
+    margin-right: auto;
+    font-size: 2.7rem;
+    text-transform: capitalize;
+    color: #444;
+    font-weight: bolder;
+  }
+  .logo img{
+    width: 130px;
+  }
+  
+  
+  
+  .header .navbar {
+    position: relative;
+  }
+  
+  .header .navbar #close-navbar {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: #444;
+    display: none;
+  }
+  
+  .header .navbar #close-navbar:hover {
+    transform: rotate(90deg);
+  }
+  
+  .header .navbar a {
+    margin-right: 2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #444;
+  }
+  
+  .header .navbar a:hover {
+    color: #0eb582;
+  }
+  
+  .header .icons div {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: #444;
+    margin-left: 1.5rem;
+  }
+  
+  .header .icons div:hover {
+    color: #0eb582;
+  }
+  
+  .header #menu-btn {
+    display: none;
+  }
+  #great{
+    color: #0eb582;
+  }
+  
+  .home {
+    padding: 0;
+  }
+  
+  .home .slide {
+    display: flex;
+    align-items: center;
+    height: 60rem;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+  
+  .home .slide .content {
+    width: 50rem;
+  }
+  
+  .home .slide .content h3 {
+    font-size: 5rem;
+    text-transform: capitalize;
+    color: #444;
+    color: #fff;
+  }
+  
+  .home .slide .content p {
+    font-size: 1.6rem;
+    line-height: 2;
+    color: #777;
+    color: #eee;
+    padding: 1rem 0;
+  }
+
+
+  /* ---------------home-2---------- */
+.home-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-size: center;
+    /* padding: 1rem; */
+    height: 80vh;
+}
+h6{
+    font-size: 17px;
+    margin-top: -20px;
+    color: darkmagenta;
+    padding-bottom: 20px;
+}
+h6 img{
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.home-2 .image img{
+    width: 600px;
+}
+.home-2 .content h4{
+    font-size: 4rem ;
+    color: #333;
+    line-height: 1.2;
+}
+.home-2 .content p{
+    padding: 1.3rem 0;
+    font-size: 1.8rem;
+    color: #6666;
+    
+}
+
+/* ---------------------courses-------------- */
+.courses-heading{
+    text-align: center;
+    font-size: 3rem;
+    color: blueviolet;
+    padding-bottom: 10px;
+    padding-top: 80px;
+}
+.heading{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 4.0rem;
+}
+.heading-2{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 4.0rem;
+    padding-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+}
+.courses{
+    background-size: cover;
+}
+.courses .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.courses .box-container .box{
+    flex: 1 1 35rem;
+    background: #fff;
+    border-radius: 2px;
+    margin: 1rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.courses .box-container .box img{
+    width: 8rem;
+    padding-top: 10px;
+}
+.courses .box-container .box h3{
+    font-size: 2rem ;
+    color: #333;
+    padding-top: 1.5rem;
+}
+.courses .box-container .box p{
+    font-size: 1.9rem;
+    color: #6666;
+    padding: 20px 1;
+    padding-bottom: 60px;
+    padding-top: 20px;
+}
+.courses .box-container .box a{
+    color: #98189a;
+    font-size: 1.8rem;
+    text-align: right;
+    padding-top: 30px;
+    padding-left: 130px;
+}
+
+
+/* ---------------project------------ */
+.project{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-size: center;
+  /* flex-wrap: wrap; */
+  /* padding: 10px 20px; */
+}
+
+.project .image img{
+  width: 600px;
+}
+.project .content h3{
+  font-size: 5rem ;
+  color: #333;
+  line-height: 1.2;
+}
+.project .content p{
+  font-size: 1.7rem;
+  color: #6666;
+  padding: 1rem 0;
+}
+.btns{
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  background: blueviolet;
+  color: #ffff;
+  cursor: pointer;
+  transition: 0.3s all linear;
+  font-size: 17px;
+}
+.btn:hover{
+  transform: scale(1.1);
+}
+
+/* --------------footer-start------ */
+
+footer{
+  background-color: #1b1d1f;
+  padding: 50px 20px;
+  border-top: 4px solid #0eb582;
+}
+.footer-container{
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo a{
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.footer-logo a span{
+  color: #0eb582;
+}
+
+.footer-social{
+  display: flex;
+  margin-top: 10px;
+}
+.footer-social a{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border: 1px solid #ffffff15;
+  font-size: 1rem;
+  margin: 0px 5px;
+  transition: all ease 0.3s;
+}
+.footer-social a:hover{
+  background-color:#4eb060;
+  transition: all ease 0.3s;
+}
+.footer-links strong{
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.footer-links ul{
+  margin-top: 10px;
+}
+.footer-links ul li{
+  list-style: none;
+  margin-top: 10px;
+}
+.footer-links ul li a{
+  color: #ffffff;
+  opacity: 0.5;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+.footer-links ul li a:hover{
+  color: #2fffc1;
+  margin-left: 8px;
+}
+
+  
+  
+  @media (max-width: 1200px) {
+    .header {
+      padding: 2rem 5%;
+    }
+    section {
+      padding: 3rem 5%;
+    }
+    .home-2{
+        flex-flow: column;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    html {
+      font-size: 55%;
+    }
+    .header {
+      padding: 2rem;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+    .project{
+      flex-flow: column;
+  }
+  .footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-links{
+    /* text-align: center; */
+    margin-top: 30px;
+  }
+  }
+  
+  @media (max-width: 768px) {
+    .header #menu-btn {
+      display: inline-block;
+    }
+    .header .navbar {
+      position: fixed;
+      top: 0;
+      right: -105%;
+      width: 30rem;
+      background: #fff;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      z-index: 1200;
+    }
+    .header .navbar #close-navbar {
+      display: block;
+    }
+    .header .navbar.active {
+      box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+      right: 0;
+    }
+    .header .navbar a {
+      display: block;
+      margin: 1rem 0;
+      text-align: center;
+      font-size: 3rem;
+    }
+    .home .slide .content h3 {
+      font-size: 3rem;
+    }
+    .home-2{
+        margin-top: 100px;
+    }
+    .home-2 .image img{
+        width: 100%;
+        padding-top: 50px;
+    }
+    .project .image img{
+      width: 100%;
+      padding-bottom: 50px;
+  }
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+    .home-2 .image img{
+        width: 100%;
+        padding-top: 50px;
+    }
+    .home-2 .content h4{
+        font-size: 4rem ;
+        color: #333;
+        line-height: 1.2;
+    }
+    .project .image img{
+      width: 100%;
+      padding-bottom: 30px;
+  }
+  .project .content h3{
+      font-size: 3rem ;
+      margin-top: 40px;
+  }
+  .project .content p{
+      font-size: 2rem;
+      color: rgba(102, 102, 102, 0.517);
+  }
+  .footer-container{
+    grid-template-columns: 1fr;
+  }
+}

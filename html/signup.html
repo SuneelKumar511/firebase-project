@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>signUp</title>
+  <!-- custom css link -->
+  <link rel="stylesheet" href="../css/signUp.css">
+  <link rel="shortcut icon" href="../imgs/logo.png">
+  <!-- firebase links -->
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+  <!-- firebase project-link -->
+  <script src="../js/firebaselink.js"></script>
+
+</head>
+<body>
+  <div class="signup-section">
+    <div class="box">
+      <div class="inner-box" id="card">
+        <div class="card-back">
+          <h2>REGISTER</h2>
+          <input type="text" id="firstname" class="input-box" placeholder="First Name">
+          <input type="text" id="lastname" class="input-box" placeholder=" Last Name">
+          <input type="text" id="mobileNumber" class="input-box" placeholder="Mobile Number">
+          <input type="text" id="country" class="input-box" placeholder="Country">
+          <select class="select_Course" id="courselist">
+            <option>Select Courses</option>
+            <option>Mobile App Development</option>
+            <option>E-commerce Course</option>
+            <option >Web Development & Web Designing</option>
+            <option>Social Media Marketing</option>
+            <option>Youtube Mastery</option>
+            <option>Graphic Design</option>
+            <option>Wordpress</option>
+            <option>Freelancing</option>
+          </select>
+          <input type="email" id="email" class="input-box" placeholder="Your Email Id">
+          <input type="password" id="password" class="input-box" placeholder="Password">
+          <p id="message">message</p>
+          <button type="submit" class="submit-btn" onclick="signUp()">SignUp</button>
+          <input type="checkbox"><span>Remember Me</span>
+          <button type="button" class="btn"><a href="./signIn.html">I've an account</a></button>
+          <a href="">Forget Password</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="../js/signUp.js"></script>
+</body>
+</html>

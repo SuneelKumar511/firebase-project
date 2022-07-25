@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashborad</title>
+
+    <!-- custome css link -->
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="shortcut icon" href="../imgs/logo.png">
+
+
+    <!-- fontAwesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- firebase links -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+
+    <!-- firebase project links -->
+    <script src="../js/firebaselink.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-logo">
+            <img src="../imgs/greatlearning-brand.svg" alt="">
+        </div>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="fas fa-bars"></label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./profile.html" id="profile">Your Profile</a></li>
+                <li><a href="#"><img src="../imgs/Avatar-Profile-PNG-Picture.png" alt=""></a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- -------------navbar-end-------------- -->
+
+    <section>
+        <div class="dashboard">
+            <h1 id="courselist"></h1>
+            <div class="student-main-div">
+                <div class="student-data">
+                    <p>applicant Name</p>
+                    <p>Father's Name</p>
+                    <p>Number</p>
+                    <p>Country</p>
+                    <p>Amount/Rs</p>
+                </div>
+                <div class="student-details">
+                    <p id="firstName"></p>
+                    <p id="lastName"></p>
+                    <p id="mobileNumber"></p>
+                    <p id="country"></p>
+                    <p>2500</p>
+                </div>
+            </div>
+            <p class="ubl">Pay with given UBL Bank account.</p>
+            <p class="ubl">270466645</p>
+            <img src="../imgs/ubl-united-bank-limited-logo-png-transparent.png" alt="" id="ubl">
+        </div>
+    </section>
+    <section>
+        <h1 id="heading-challan">Upload your monthly paid chalan (iskillers copy)</h1>
+        <label class="upload-challan">
+            <input type="file" onchange="challan(event)">
+            <i class="fa-solid fa-cloud-arrow-down"></i>
+            <div>Select photo of the paid chalan (office) copy or easypaisa,jazzcash reception</div>
+        </label>
+        <button onclick="update()">send challan</button>
+    </section>
+
+
+
+    <script src="../js/dashboard.js"></script>
+</body>
+
+</html>
