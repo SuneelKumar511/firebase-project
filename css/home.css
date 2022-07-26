@@ -295,7 +295,7 @@ h6 img{
   transition: 0.3s all linear;
   font-size: 17px;
 }
-.btn:hover{
+.btns:hover{
   transform: scale(1.1);
 }
 
@@ -341,7 +341,7 @@ footer{
   align-items: center;
   color: #fff;
   border: 1px solid #ffffff15;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin: 0px 5px;
   transition: all ease 0.3s;
 }
