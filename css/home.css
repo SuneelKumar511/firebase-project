@@ -70,16 +70,16 @@
   .header .navbar {
     position: relative;
   }
-  
-  .header .navbar #close-navbar {
-    position: absolute;
-    top: 1.5rem;
-    right: 2rem;
-    font-size: 4rem;
-    cursor: pointer;
-    color: #444;
+  #menu-bar{
     display: none;
-  }
+}
+  header label {
+    font-size: 3rem;
+    color: purple;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
   
   .header .navbar #close-navbar:hover {
     transform: rotate(90deg);
@@ -143,6 +143,18 @@
     color: #777;
     color: #eee;
     padding: 1rem 0;
+  }
+
+  #rotate{
+  animation: circle infinite 10s linear;
+  }
+  @keyframes circle {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 
 
@@ -398,36 +410,36 @@ footer{
   }
   
   @media (max-width: 768px) {
-    .header #menu-btn {
-      display: inline-block;
-    }
+    .header label{
+      opacity: 1;
+      visibility: visible;
+      margin-right: 10px;
+  }
     .header .navbar {
-      position: fixed;
-      top: 0;
-      right: -105%;
-      width: 30rem;
-      background: #fff;
-      height: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      z-index: 1200;
-    }
-    .header .navbar #close-navbar {
-      display: block;
-    }
-    .header .navbar.active {
-      box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+      position: absolute;
+      top: 100%;
+      left: 0;
       right: 0;
+      background: #ffff;
+      border-top: .5rem solid rgba(0,0,0,0.1);
+      border-bottom: 2px solid rgba(102, 102, 102, 0.517);
+      box-shadow: 0.2rem 1rem rgba(0,0,0,0.1);
+      opacity: 0;
+      padding: 1rem 2rem;
+      width: 100%;
     }
-    .header .navbar a {
+    .header .navbar a{
+      width: 100%;
+      background-color: #fff;
       display: block;
-      margin: 1rem 0;
-      text-align: center;
-      font-size: 3rem;
+      margin-top: 10px;
     }
+    #menu-bar:checked ~ .navbar{
+        opacity: 1;
+    }
+      .header #menu-btn {
+        display: inline-block;
+      }
     .home .slide .content h3 {
       font-size: 3rem;
     }
