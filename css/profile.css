@@ -199,4 +199,10 @@ h6{
     #menu-bar:checked ~ .navbar{
         opacity: 1;
     }
+
+}
+@media(max-width:1230px){
+    header label {
+        font-size: 2rem;
+    }
 }
